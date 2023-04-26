@@ -1,0 +1,16 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% block title %} Mahalliy Xabarlar {% endblock title %}
+{% block content %}
+{% for texnologik in texnologik_yangiliklar %}
+<div class="card mb-3">
+  <a href="{{ texnologik.get_absolute_url }}">
+  <img src="{{ texnologik.imagess.url }}" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">{{ texnologik.title | truncatewords:5 }}</h5>
+    <p class="card-text">{{ texnologik.body | truncatewords:10 }}</p>
+  </div>
+  </a>
+</div>
+{% endfor %}
+{% endblock content %}

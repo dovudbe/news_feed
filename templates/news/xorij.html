@@ -1,0 +1,16 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% block title %} Xorij xabarlari {% endblock title %}
+{% block content %}
+{% for horij in xorij_yangiliklar %}
+<div class="card mb-3">
+  <a href="{{ horij.get_absolute_url }}">
+  <img src="{{ horij.imagess.url }}" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">{{ horij.title | truncatewords:5 }}</h5>
+    <p class="card-text">{{ horij.body | truncatewords:10 }}</p>
+  </div>
+    </a>
+</div>
+{% endfor %}
+{% endblock content %}

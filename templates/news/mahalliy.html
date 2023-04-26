@@ -1,0 +1,16 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% block title %} Mahalliy Xabarlar {% endblock title %}
+{% block content %}
+{% for news in mahalliy_yangiliklar %}
+<div class="card mb-3">
+  <a href="{{ news.get_absolute_url }}">
+  <img src="{{ news.imagess.url }}" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">{{ news.title | truncatewords:5 }}</h5>
+    <p class="card-text">{{ news.body | truncatewords:10 }}</p>
+  </div>
+  </a>
+</div>
+{% endfor %}
+{% endblock content %}

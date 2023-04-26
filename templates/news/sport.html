@@ -1,0 +1,16 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% block title %} Mahalliy Xabarlar {% endblock title %}
+{% block content %}
+{% for sport in sport_yangiliklari %}
+<div class="card mb-3">
+  <a href="{{ sport.get_absolute_url }}">
+  <img src="{{ sport.imagess.url }}" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">{{ sport.title | truncatewords:5 }}</h5>
+    <p class="card-text">{{ sport.body | truncatewords:10 }}</p>
+  </div>
+  </a>
+</div>
+{% endfor %}
+{% endblock content %}
