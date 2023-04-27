@@ -2,9 +2,13 @@
 
 {% load static %}
 
-{% block title %} log out sahifasi {% endblock title %}
+{% load i18n %}
+
+{% block title %} 
+{% blocktrans %} chiqish sahifasi {% endblocktrans %}
+{% endblock title %}
 
 {% block content %}
-  <h2 class="text-center">veb-seytdan chiqish - log out</h2>
-  <p class="text-center">siz veb saytdan chiqdingiz | <a href="{% url 'login' %}">qaytadan kirish</a></p>
+  <h2 class="text-center">{% blocktrans %} veb-seytdan chiqish {% endblocktrans %}</h2>
+  <p class="text-center">{% blocktrans %} siz veb saytdan chiqdingiz {% endblocktrans %} | <a href="{% url 'login' %}">{% blocktrans %} qaytadan kirish {% endblocktrans %}</a></p>
 {% endblock content %}

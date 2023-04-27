@@ -1,0 +1,555 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-27 19:18+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\project\settings.py:124
+msgid "uzbek"
+msgstr ""
+
+#: .\project\settings.py:125
+msgid "english"
+msgstr ""
+
+#: .\project\settings.py:126
+msgid "russian"
+msgstr ""
+
+#: .\templates\account\profile_edit.html:6
+#: .\templates\account\profile_edit.html:11
+msgid " foydalanuvchi malumotlarini o'zgartirish "
+msgstr ""
+
+#: .\templates\account\profile_edit.html:12
+msgid "вы заполняете свою информацию, используя форму ниже"
+" siz o'zingiz haqidagi malumotlarni quyidagi forma orqali to'ldirishingiz "
+"mumkin "
+msgstr "возможный"
+
+#: .\templates\account\profile_edit.html:17
+msgid " saqlash "
+msgstr "хранилище"
+
+#: .\templates\account\register.html:6
+#, fuzzy
+#| msgid " mashxur yangiliklar "
+msgid " Mahalliy yangiliklari "
+msgstr "популярные новости"
+
+#: .\templates\account\register.html:11
+msgid " Yangi foydalanuvchilarni ro`yhatdan o`tkazish uchun "
+msgstr "Для регистрации новых пользователей"
+
+#: .\templates\account\register.html:12
+msgid " Ro`yhatdan o`tish uchun quyidagi formani to`ldiring: "
+msgstr "Заполните форму ниже, чтобы зарегистрироваться"
+
+#: .\templates\account\register.html:15
+msgid " Ro`yhatdan o`tish "
+msgstr "Постановка на учет"
+
+#: .\templates\account\register_done.html:6
+#: .\templates\registration\login.html:8
+#, fuzzy
+#| msgid " Bosh Sahifa "
+msgid " login sahifasi "
+msgstr "Главная страница"
+
+#: .\templates\account\register_done.html:11
+msgid " tabriklaymiz ro`yhatdan o`tdingiz "
+msgstr "Поздравляем, вы зарегистрировались"
+
+#: .\templates\account\register_done.html:12
+msgid " Kirish "
+msgstr "Входить"
+
+#: .\templates\crud\news_create.html:8
+msgid " yagilik qo'shish "
+msgstr "добавить свежести"
+
+#: .\templates\crud\news_create.html:13 .\templates\crud\news_create.html:16
+#: .\templates\pages\admin_page.html:22
+msgid " yangilik qo'shish "
+msgstr "Добавить новое"
+
+#: .\templates\crud\news_delete.html:11
+msgid " joriy yangilikni o'chirish "
+msgstr "удалить текущие новости"
+
+#: .\templates\crud\news_delete.html:13
+msgid " sarlavhali yangilikni o'chirish "
+msgstr "удалить заголовок новости"
+
+#: .\templates\crud\news_delete.html:14
+msgid " o'chirish "
+msgstr "удалить"
+
+#: .\templates\crud\news_edit.html:11
+#, fuzzy
+#| msgid " so'nggi yangiliklar "
+msgid " joriy yangilikni tahrirlash "
+msgstr "последние новости"
+
+#: .\templates\crud\news_edit.html:14
+msgid " tahrirlash "
+msgstr "редактирование"
+
+#: .\templates\news\404.html:10
+msgid " kechirasiz "
+msgstr "прошу прощения"
+
+#: .\templates\news\404.html:13
+msgid " Go to home page "
+msgstr "Вернуться на домашнюю страницу"
+
+#: .\templates\news\404.html:19 .\templates\news\contact.html:58
+#, fuzzy
+#| msgid " mashxur yangiliklar "
+msgid " mashxur xabarlar "
+msgstr "популярные новости"
+
+#: .\templates\news\base.html:37
+#, fuzzy
+#| msgid " Bosh Sahifa "
+msgid " bosh sahifa "
+msgstr "Главная страница"
+
+#: .\templates\news\base.html:38 .\templates\news\base.html:154
+#: .\templates\news\single_page.html:36
+msgid " biz haqimizda "
+msgstr "о нас"
+
+#: .\templates\news\base.html:39 .\templates\news\base.html:87
+msgid " biz bilan aloqa "
+msgstr "связаться с нами"
+
+#: .\templates\news\base.html:58
+msgid " chiqish "
+msgstr "Выход"
+
+#: .\templates\news\base.html:59
+msgid " profil "
+msgstr "профиль"
+
+#: .\templates\news\base.html:61 .\templates\news\news_detail.html:54
+msgid " saytga kirish "
+msgstr "войти на сайт"
+
+#: .\templates\news\base.html:83
+#, fuzzy
+#| msgid " Texnologiya "
+msgid " Tenologiya "
+msgstr "технологии"
+
+#: .\templates\news\base.html:84 .\templates\news\home.html:84
+msgid " xorij "
+msgstr "иностранный"
+
+#: .\templates\news\base.html:85 .\templates\news\home.html:50
+msgid " mahalliy "
+msgstr "местный"
+
+#: .\templates\news\base.html:86 .\templates\news\home.html:179
+msgid " sport "
+msgstr "спорт"
+
+#: .\templates\news\base.html:89 .\templates\pages\admin_page.html:5
+#: .\templates\pages\admin_page.html:10
+msgid " admin sahifasi "
+msgstr "страница администратора"
+
+#: .\templates\news\base.html:94
+msgid " qidiruv "
+msgstr "поиск"
+
+#: .\templates\news\base.html:104 .\templates\news\home.html:26
+#: .\templates\news\single_page.html:82
+msgid " so'nggi yangiliklar "
+msgstr "последние новости"
+
+#: .\templates\news\base.html:139
+msgid " rasmlar "
+msgstr "картинки"
+
+#: .\templates\news\base.html:144
+#, fuzzy
+#| msgid " barcha kategoriyalar "
+msgid " kategoriyalar "
+msgstr "Все категории"
+
+#: .\templates\news\base.html:164
+msgid " Copyright "
+msgstr "Авторские права"
+
+#: .\templates\news\base.html:164
+msgid " NewsFeed "
+msgstr "Новостная лента"
+
+#: .\templates\news\contact.html:5
+msgid "Biz Bilan Aloqa sahifasi "
+msgstr "Биз Билан Алока сахифаси"
+
+#: .\templates\news\contact.html:44
+msgid " kantaktlar "
+msgstr "контакты"
+
+#: .\templates\news\ebout.html:6
+msgid " Biz Haqimizda "
+msgstr "О нас"
+
+#: .\templates\news\home.html:7
+msgid " Bosh Sahifa "
+msgstr "Главная страница"
+
+#: .\templates\news\home.html:34
+msgid " ko'rilganlar soni: "
+msgstr "количество просмотров"
+
+#: .\templates\news\home.html:114 .\templates\news\single_page.html:117
+msgid " Texnologiya "
+msgstr "технологии"
+
+#: .\templates\news\home.html:215
+msgid " mashxur yangiliklar "
+msgstr "популярные новости"
+
+#: .\templates\news\home.html:288
+msgid " barcha kategoriyalar "
+msgstr "Все категории"
+
+#: .\templates\news\mahalliy.html:5
+msgid "Mahalliy Xabarlar "
+msgstr "Местные новости"
+
+#: .\templates\news\news_detail.html:26
+#, fuzzy
+#| msgid " mashxur yangiliklar "
+msgid " Bu yangilikga "
+msgstr "популярные новости"
+
+#: .\templates\news\news_detail.html:26
+msgid " ta izoh qoldirilgan "
+msgstr "комментариев не осталось"
+
+#: .\templates\news\news_detail.html:42
+msgid " izoh qoldirish "
+msgstr "Оставить комментарий"
+
+#: .\templates\news\news_detail.html:51
+msgid " faqatgina ro'yhatdan o'tgan foydalanuvchilar izoh qoldirishi mumkin "
+msgstr "Комментарии Только зарегистрированные пользователи могут оставлять комментарии"
+
+#: .\templates\news\news_detail.html:52
+msgid " izoh qoldirish uchun "
+msgstr "оставить комментарий"
+
+#: .\templates\news\news_detail.html:53
+msgid " ro'yhatdan o'tish "
+msgstr "Регистрация"
+
+#: .\templates\news\news_detail.html:54
+msgid " yoki "
+msgstr "или"
+
+#: .\templates\news\news_list.html:12
+msgid " salom "
+msgstr "Привет"
+
+#: .\templates\news\search_result.html:10
+msgid " qidiruv natijalari "
+msgstr "результаты поиска"
+
+#: .\templates\news\single_page.html:5
+msgid " yangilik sayti "
+msgstr "новостной сайт"
+
+#: .\templates\news\single_page.html:5
+#, fuzzy
+#| msgid " Bosh Sahifa "
+msgid " sahifalar "
+msgstr "Главная страница"
+
+#: .\templates\news\single_page.html:5
+#, fuzzy
+#| msgid " Bosh Sahifa "
+msgid " Yagona sahifa "
+msgstr "Главная страница"
+
+#: .\templates\news\single_page.html:35 .\templates\news\single_page.html:116
+msgid " uy "
+msgstr "дом"
+
+#: .\templates\news\single_page.html:37
+msgid " aloqa "
+msgstr "контакт"
+
+#: .\templates\news\single_page.html:61
+#, fuzzy
+#| msgid " Texnologiya "
+msgid " texnologiya "
+msgstr "технологии"
+
+#: .\templates\news\single_page.html:71
+msgid " noutbooklar "
+msgstr "блокноты"
+
+#: .\templates\news\single_page.html:72
+msgid " planshetlar "
+msgstr "таблетки"
+
+#: .\templates\news\single_page.html:73
+msgid " biz bilan bog'lanish "
+msgstr "связаться с нами"
+
+#: .\templates\news\single_page.html:74
+msgid " 404 xatolik "
+msgstr "ошибка 404"
+
+#: .\templates\news\single_page.html:118
+msgid " Mobil "
+msgstr "Мобильный"
+
+#: .\templates\news\sport.html:5
+#, fuzzy
+#| msgid " so'nggi yangiliklar "
+msgid " sport yangiliklari "
+msgstr "последние новости"
+
+#: .\templates\news\texnologiya.html:5
+#, fuzzy
+#| msgid " Texnologiya "
+msgid " texnologik Xabarlar "
+msgstr "технологии"
+
+#: .\templates\news\xorij.html:5
+msgid " Xorij xabarlari "
+msgstr "Иностранные сообщения"
+
+#: .\templates\pages\admin_page.html:11
+#, fuzzy
+#| msgid " barcha kategoriyalar "
+msgid " barcha adminlar "
+msgstr "Все категории"
+
+#: .\templates\pages\admin_page.html:14
+msgid " username "
+msgstr "имя пользователя"
+
+#: .\templates\pages\admin_page.html:15
+msgid " ismi "
+msgstr "Имя"
+
+#: .\templates\pages\admin_page.html:16
+msgid " familiyasi "
+msgstr "фамилия"
+
+#: .\templates\pages\admin_page.html:18
+msgid " tug'ulgan yili "
+msgstr "год рождения"
+
+#: .\templates\pages\user_profile.html:5
+msgid " foydalanuvchi profili "
+msgstr "Профиль пользователя"
+
+#: .\templates\pages\user_profile.html:9
+msgid " xush kelibsiz "
+msgstr "добро пожаловать"
+
+#: .\templates\pages\user_profile.html:10
+msgid " siz haqingizdagi malumotlar "
+msgstr "информация о вас"
+
+#: .\templates\pages\user_profile.html:12
+msgid " tug'ulgan yilingiz:"
+msgstr "ваш год рождения:"
+
+#: .\templates\pages\user_profile.html:13
+msgid " Username: "
+msgstr "Имя пользователя"
+
+#: .\templates\pages\user_profile.html:14
+msgid " Emailingiz: "
+msgstr "Ваш адрес электронной почты"
+
+#: .\templates\pages\user_profile.html:15
+msgid " Ismingiz: "
+msgstr "Ваше имя"
+
+#: .\templates\pages\user_profile.html:16
+msgid " Familiyangiz: "
+msgstr "Ваша фамилия"
+
+#: .\templates\pages\user_profile.html:18
+msgid " parolni alashtirish "
+msgstr "изменить пароль"
+
+#: .\templates\pages\user_profile.html:19
+msgid " o'zgartirish "
+msgstr "изменять"
+
+#: .\templates\registration\logged_out.html:8
+#, fuzzy
+#| msgid " Bosh Sahifa "
+msgid " chiqish sahifasi "
+msgstr "Главная страница"
+
+#: .\templates\registration\logged_out.html:12
+msgid " veb-seytdan chiqish "
+msgstr "выйти из веб-сайта"
+
+#: .\templates\registration\logged_out.html:13
+msgid " siz veb saytdan chiqdingiz "
+msgstr "вы вышли с сайта"
+
+#: .\templates\registration\logged_out.html:13
+msgid " qaytadan kirish "
+msgstr "войти снова"
+
+#: .\templates\registration\login.html:12
+msgid " veb-seytga kirish "
+msgstr "доступ к веб-сайту"
+
+#: .\templates\registration\login.html:13
+msgid " iltimos saytga kirish uchun quyidagi formani to'ldiring "
+msgstr "Пожалуйста, заполните форму ниже, чтобы получить доступ к сайту"
+
+#: .\templates\registration\login.html:14
+msgid " agar parolni unutgan bo'lsangiz "
+msgstr "если вы забыли свой пароль"
+
+#: .\templates\registration\login.html:14
+msgid "  parolni tiklash "
+msgstr "восстановление пароля"
+
+#: .\templates\registration\login.html:17
+#: .\templates\registration\password_reset_complete.html:11
+#, fuzzy
+#| msgid " Texnologiya "
+msgid " login "
+msgstr "технологии"
+
+#: .\templates\registration\login.html:21
+msgid " Agar foydalanuvchi profilingiz bo'lmasa "
+msgstr "Если у вас нет профиля пользователя"
+
+#: .\templates\registration\login.html:21
+msgid " ro'yhatdan o'tishingiz "
+msgstr "ваша регистрация"
+
+#: .\templates\registration\login.html:21
+msgid " mumkin "
+msgstr "возможный"
+
+#: .\templates\registration\password_change_done.html:5
+msgid " foydalanuvchi paroli o'zgartirildi "
+msgstr "пароль пользователя изменен"
+
+#: .\templates\registration\password_change_done.html:10
+msgid " foydalanuvchi paroli o'zgardi "
+msgstr "пароль пользователя изменен"
+
+#: .\templates\registration\password_change_done.html:11
+msgid " sizning parolingiz muvaffaqiyatli o'zgartirildi "
+msgstr "Ваш пароль был успешно изменен"
+
+#: .\templates\registration\password_change_form.html:5
+#: .\templates\registration\password_reset_confirm.html:11
+#: .\templates\registration\password_reset_form.html:9
+msgid " parolni tiklash "
+msgstr "восстановление пароля"
+
+#: .\templates\registration\password_change_form.html:9
+msgid " parolni o'zgartirish "
+msgstr "изменить пароль"
+
+#: .\templates\registration\password_change_form.html:10
+msgid " parolni o'zgartirish uchun quyidagi formani to'ldiring "
+msgstr "Заполните форму ниже, чтобы изменить пароль"
+
+#: .\templates\registration\password_change_form.html:13
+#: .\templates\registration\password_reset_complete.html:6
+#: .\templates\registration\password_reset_confirm.html:17
+#: .\templates\registration\password_reset_done.html:7
+msgid " parolni almashtirish "
+msgstr "изменить пароль"
+
+#: .\templates\registration\password_reset_complete.html:10
+msgid " parol o'zgartirildi "
+msgstr "пароль был изменен"
+
+#: .\templates\registration\password_reset_complete.html:11
+msgid " qayta tiklandi, qayta "
+msgstr "восстановлен, повторно"
+
+#: .\templates\registration\password_reset_complete.html:11
+msgid " qilishingiz mumkin "
+msgstr "можешь сделать"
+
+#: .\templates\registration\password_reset_confirm.html:7
+msgid " foydalanuvchi parolini tiklash "
+msgstr "сбросить пароль пользователя"
+
+#: .\templates\registration\password_reset_confirm.html:12
+msgid " parolingiz o'zgarishi uchun quyidagi formani to'ldiring "
+msgstr "Заполните форму ниже, чтобы изменить пароль"
+
+#: .\templates\registration\password_reset_confirm.html:14
+msgid " yangi parolni kiriting "
+msgstr "Введите новый пароль"
+
+#: .\templates\registration\password_reset_confirm.html:20
+msgid "вы использовали неправильную ссылку, которую он, возможно, использовал раньше"
+" siz  noto'g'ri linkdan foydalandingiz u avvalroq foydalangan bo'lishi "
+"va ishlatilish vaqti o'tib ketgan bo'lishi mumkin "
+msgstr "и, возможно, истек"
+
+#: .\templates\registration\password_reset_done.html:11
+msgid " parolni o'zgartirish uchun emailga yuborildi "
+msgstr "письмо отправлено для смены пароля"
+
+#: .\templates\registration\password_reset_done.html:12
+msgid " parolni o'zgartirish uchun emailga link yuborildi "
+msgstr "Ссылка для смены пароля отправлена ​​на вашу почту"
+
+#: .\templates\registration\password_reset_done.html:13
+msgid " agar qabul qilmagan bo'lsangiz, qayta uruning "
+msgstr "если вы не получили его, попробуйте еще раз"
+
+#: .\templates\registration\password_reset_email.html:2
+msgid "Ваш адрес электронной почты был введен для сброса пароля. Чтобы сбросить пароль"
+" Sizning emailingiz parolni tiklash uchun kiritildi. Parolni tiklash uchun "
+"quyidagi linkka kiring: "
+msgstr "введите следующую ссылку:"
+
+#: .\templates\registration\password_reset_email.html:4
+msgid " Sizning username "
+msgstr "Ваше имя"
+
+#: .\templates\registration\password_reset_form.html:5
+msgid " parolni tiklash"
+msgstr "восстановление пароля"
+
+#: .\templates\registration\password_reset_form.html:10
+msgid " parolni tiklash uchun email adresingizni kiriting "
+msgstr "Введите свой адрес электронной почты для восстановления пароля"
+
+#: .\templates\registration\password_reset_form.html:13
+msgid " email jo'natish "
+msgstr "отправить электронное письмо"

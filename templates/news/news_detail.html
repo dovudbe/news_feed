@@ -2,6 +2,8 @@
 
 {% load static %}
 
+{% load i18n %}
+
 {% load hitcount_tags %}
 
 {% block title %} {{ news.title}} {% endblock title %}
@@ -21,7 +23,7 @@
 </div>
 {% endif %}
 
-<h3>Bu yangilikga {{ comment_count }} ta izoh qoldirilgan</h3>
+<h3>{% blocktrans %} Bu yangilikga {% endblocktrans %} {{ comment_count }} {% blocktrans %} ta izoh qoldirilgan {% endblocktrans %}</h3>
 {% for comment in comments %}
 <div class="comments" style="padding:10px">
     <p class="font-weight-bold">
@@ -37,7 +39,7 @@
 {% if user.is_authenticated %}
 <div class="col-md-8 card mb-4 mt-3">
     <div class="card-body">
-        <h3>izoh qoldirish</h3>
+        <h3>{% blocktrans %} izoh qoldirish {% endblocktrans %}</h3>
         <form method="POST" style="margin-top: 1.3em">{% csrf_token %}
             {{ comment_form.as_p }}
             <button type="submit" class="btn btn-primary btn-lg">yuborish</button>
@@ -46,10 +48,10 @@
 </div>
 {% else %}
 <div class="card-body">
-    <p class="text-danger">faqatgina ro'yhatdan o'tgan foydalanuvchilar izoh qoldirishi mumkin</p>
-    <p>izoh qoldirish uchun
-        <a href="{% url 'user_register' %}">ro'yhatdan o'tish</a>
-        yoki <a href="{% url 'login' %}"> saytga kirish</a>
+    <p class="text-danger">{% blocktrans %} faqatgina ro'yhatdan o'tgan foydalanuvchilar izoh qoldirishi mumkin {% endblocktrans %}</p>
+    <p>{% blocktrans %} izoh qoldirish uchun {% endblocktrans %}
+        <a href="{% url 'user_register' %}">{% blocktrans %} ro'yhatdan o'tish {% endblocktrans %}</a>
+        {% blocktrans %} yoki {% endblocktrans %} <a href="{% url 'login' %}">{% blocktrans %} saytga kirish {% endblocktrans %}</a>
     </p>
 </div>
 {% endif %}

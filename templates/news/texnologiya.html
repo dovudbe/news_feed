@@ -1,6 +1,9 @@
 {% extends 'news/base.html' %}
 {% load static %}
-{% block title %} Mahalliy Xabarlar {% endblock title %}
+{% load i18n %}
+{% block title %} 
+{% blocktrans %} texnologik Xabarlar {% endblocktrans %}
+{% endblock title %}
 {% block content %}
 {% for texnologik in texnologik_yangiliklar %}
 <div class="card mb-3">

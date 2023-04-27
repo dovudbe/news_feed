@@ -1,4 +1,7 @@
 {% load static %}
+
+{% load i18n %}
+
 <html>
 <head>
 <title>NewsFeed</title>
@@ -31,17 +34,31 @@
         <div class="header_top">
           <div class="header_top_left">
             <ul class="top_nav">
-              <li><a href="{% url 'home_page' %}">bosh sahifa</a></li>
-              <li><a href="{% url 'about_page' %}">biz haqimizda</a></li>
-              <li><a href="{% url 'contact_page' %}">biz bilan aloqa</a></li>
+              <li><a href="{% url 'home_page' %}">{% blocktrans %} bosh sahifa {% endblocktrans %}</a></li>
+              <li><a href="{% url 'about_page' %}">{% blocktrans %} biz haqimizda {% endblocktrans %}</a></li>
+              <li><a href="{% url 'contact_page' %}">{% blocktrans %} biz bilan aloqa {% endblocktrans %}</a></li>
             </ul>
           </div>
+          <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+            <input name="next" type="hidden" value="{{ redirect_to }}">
+            <select name="language">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                        {{ language.name_local }} ({{ language.code }})
+                    </option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Go">
+        </form>
           <div class="header_top_right">
             {% if request.user.is_authenticated %}
-            <p><a href="{% url 'logout' %}" style="color:red">logout</a></p>
-            <P><a href="{% url 'user_profile' %}" style="color:aqua">my profile</a></P>
+            <p><a href="{% url 'logout' %}" style="color:red">{% blocktrans %} chiqish {% endblocktrans %}</a></p>
+            <P><a href="{% url 'user_profile' %}" style="color:aqua">{% blocktrans %} profil {% endblocktrans %}</a></P>
             {% else %}
-            <P><a href="{% url 'login' %}" style="color:blue">saytga kirish</a></P>
+            <P><a href="{% url 'login' %}" style="color:blue">{% blocktrans %} saytga kirish {% endblocktrans %}</a></P>
             {% endif %}
             <p>{% now "jS F Y H:i" %}</p>
           </div>
@@ -63,18 +80,18 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav main_nav">
           <li class="active"><a href="{% url 'home_page' %}"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
-          <li><a href="{% url 'technology_news_page' %}">Tenologiya</a></li>
-          <li><a href="{% url 'foreign_news_page' %}">xorij</a></li>
-          <li><a href="{% url 'local_news_page' %}">mahalliy</a></li>
-          <li><a href="{% url 'sport_news_page' %}">sport</a></li>
-          <li><a href="{% url 'contact_page' %}">biz bilan aloqa</a></li>
+          <li><a href="{% url 'technology_news_page' %}">{% blocktrans %} Tenologiya {% endblocktrans %}</a></li>
+          <li><a href="{% url 'foreign_news_page' %}">{% blocktrans %} xorij {% endblocktrans %}</a></li>
+          <li><a href="{% url 'local_news_page' %}">{% blocktrans %} mahalliy {% endblocktrans %}</a></li>
+          <li><a href="{% url 'sport_news_page' %}">{% blocktrans %} sport {% endblocktrans %}</a></li>
+          <li><a href="{% url 'contact_page' %}">{% blocktrans %} biz bilan aloqa {% endblocktrans %}</a></li>
           {% if user.is_authenticated and user.is_superuser %}
-          <li><a href="{% url 'admin_page' %}">admin sahifasi</a></li>
+          <li><a href="{% url 'admin_page' %}">{% blocktrans %} admin sahifasi {% endblocktrans %}</a></li>
           {% endif %}
           <li>
             <form method="get" action="{% url 'search_results' %}">
               <input type="search" name="q" placeholder="yozing..." class="from-control" width="30%" height="40%">
-              <button>qidiruv</button>
+              <button>{% blocktrans %} qidiruv {% endblocktrans %}</button>
             </form>
           </li>
         </ul>
@@ -84,7 +101,7 @@
   <section id="newsSection">
     <div class="row">
       <div class="col-lg-12 col-md-12">
-        <div class="latest_newsarea"> <span>so'nggi yangiliklar</span>
+        <div class="latest_newsarea"> <span>{% blocktrans %} so'nggi yangiliklar {% endblocktrans %}</span>
           <ul id="ticker01" class="news_sticker">
             {% for processor in latest_news %}
             <li><a href="{% url 'news_detail_page' processor.pk %}"><img src="{{ processor.imagess.url }}" alt="">{{ processor.title | truncatewords:5 }}...</a></li>
@@ -119,12 +136,12 @@
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4">
           <div class="footer_widget wow fadeInLeftBig">
-            <h2>rasmlar</h2>
+            <h2>{% blocktrans %} rasmlar {% endblocktrans %}</h2>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4">
           <div class="footer_widget wow fadeInDown">
-            <h2>kategoriyalar</h2>
+            <h2>{% blocktrans %} kategoriyalar {% endblocktrans %}</h2>
             <ul class="tag_nav">
               {% for kategor in categories %}
               <li><a href="#">{{ kategor.name }}</a></li>
@@ -134,7 +151,7 @@
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4">
           <div class="footer_widget wow fadeInRightBig">
-            <h2>biz haqimizda</h2>
+            <h2>{% blocktrans %} biz haqimizda {% endblocktrans %}</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <address>
             Perfect News,1238 S . 123 St.Suite 25 Town City 3333,USA Phone: 123-326-789 Fax: 123-546-567
@@ -144,7 +161,7 @@
       </div>
     </div>
     <div class="footer_bottom">
-      <p class="copyright">Copyright &copy; 2045 <a href="index.html">NewsFeed</a></p>
+      <p class="copyright">{% blocktrans %} Copyright {% endblocktrans %} &copy; 2045 <a href="index.html">{% blocktrans %} NewsFeed {% endblocktrans %}</a></p>
     </div>
   </footer>
  </div>

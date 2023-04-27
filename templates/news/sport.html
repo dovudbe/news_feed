@@ -1,6 +1,9 @@
 {% extends 'news/base.html' %}
 {% load static %}
-{% block title %} Mahalliy Xabarlar {% endblock title %}
+{% load i18n %}
+{% block title %} 
+{% blocktrans %} sport yangiliklari {% endblocktrans %}
+{% endblock title %}
 {% block content %}
 {% for sport in sport_yangiliklari %}
 <div class="card mb-3">

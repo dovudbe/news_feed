@@ -1,12 +1,15 @@
 {% extends 'news/base.html' %}
 {% load static %}
+{% load i18n %}
 
-{% block title %} login sahifasi {% endblock title %}
+{% block title %}
+{% blocktrans %} login sahifasi {% endblocktrans %}
+{% endblock title %}
 
 {% block content %}
 
-<h1>{{ new_user.first_name }}, tabriklaymiz ro`yhatdan o`tdingiz</h1>
-<p><a href="{% url 'login' %}">Kirish</a></p>
+<h1>{{ new_user.first_name }}, {% blocktrans %} tabriklaymiz ro`yhatdan o`tdingiz {% endblocktrans %}</h1>
+<p><a href="{% url 'login' %}">{% blocktrans %} Kirish {% endblocktrans %}</a></p>
 
 
 {% endblock content %}

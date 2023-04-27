@@ -2,14 +2,16 @@
 
 {% load static %}
 
+{% load i18n %}
+
 {% block title %}{{ news.title }}{% endblock title %}
 
 {% block content %}
 
-<h2 class="text-center">joriy yangilikni o'chirish</h2>
+<h2 class="text-center">{% blocktrans %} joriy yangilikni o'chirish {% endblocktrans %}</h2>
 <form method="post">{% csrf_token %}
-    <p>{{ news.title | truncatewords:4 }}.....sarlavhali yangilikni o'chirish</p>
-    <button type="submit" class="btn btn-danger ml-2">o'chirish</button>
+    <p>{{ news.title | truncatewords:4 }}.....{% blocktrans %} sarlavhali yangilikni o'chirish {% endblocktrans %}</p>
+    <button type="submit" class="btn btn-danger ml-2">{% blocktrans %} o'chirish {% endblocktrans %}</button>
 </form>
 
 {% endblock content %}

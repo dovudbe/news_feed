@@ -1,10 +1,13 @@
 {% extends 'news/base.html' %}
 {% load static %}
-{% block title %} qidiruv natijalari {% endblock title %}
+{% load i18n %}
+{% block title %} 
+{% endblocktrans %} qidiruv natijalari {% endblocktrans %}
+{% endblock title %}
 
 {% block content %}
 
-<h2> qidiruv natijalari </h2>
+<h2>{% blocktrans %} qidiruv natijalari {% endblocktrans %}</h2>
 {% for yangilik in barcha_yangiliklar %}
 <h3>
     <a href="{% url 'news_detail_page' yangilik.slug %}" class="text-danger">{{ yangilik.title }}</a>

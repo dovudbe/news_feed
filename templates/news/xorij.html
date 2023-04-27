@@ -1,6 +1,9 @@
 {% extends 'news/base.html' %}
 {% load static %}
-{% block title %} Xorij xabarlari {% endblock title %}
+{% load i18n %}
+{% block title %}
+{% blocktrans %} Xorij xabarlari {% endblocktrans %}
+{% endblock title %}
 {% block content %}
 {% for horij in xorij_yangiliklar %}
 <div class="card mb-3">
